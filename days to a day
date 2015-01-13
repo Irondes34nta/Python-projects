@@ -1,0 +1,25 @@
+import random
+
+a=0
+b=0
+c=0
+d=0
+x=0
+y=0
+
+def days_to_a_day(a,b,c,d,x,y):
+        
+    while (2015 + 140)-(a * 1000 +b*100 + c*10 + d + 30 * x + y)!=x * 1000000 + y*100000 + a*10000 +b*1000+c*100+d*10:
+        
+        a=random.randint(0,10)
+        b=random.randint(0,10)
+        c=random.randint(0,10)
+        d=random.randint(0,10)
+        x=random.randint(0,10)
+        y=random.randint(0,10)
+        
+    if (2015 + 140)-(a * 1000 +b*100 + c*10 + d + 30 * x + y)==x * 1000000 + y*100000 + a*10000 +b*1000+c*100+d*10:
+        #possible way : return a * 1000 +b*100 + c*10 + d + 30 * x + y
+        print (a * 1000 +b*100 + c*10 + d + 30 * x + y)
+
+days_to_a_day(a,b,c,d,x,y)
